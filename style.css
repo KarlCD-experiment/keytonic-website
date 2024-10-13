@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://yt3.ggpht.com/kPy30yStbmOTwdcik6trhcTeA79dh7QDMPv6XCd2q9qpgsL0RJrRThOaYmyltTKgQhmHqqRt=s160-c-k-c0x00ffffff-no-rj'); /* Placeholder for header background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Biography Section */
+#bio {
+    background-color: #222;
+}
+
+#bio p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Music Section */
+#music {
+    background-color: #333;
+}
+
+#music p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+/* Tour Dates Section */
+#tour {
+    background-color: #444;
+}
+
+#tour p {
+    font-size: 1.2em;
+    color: #f4a261;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    color: #888;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
